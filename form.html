@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Adrien Darribeyros</title>
+    </head>
+    <body>
+        <h1>Formulario para capturar metas a corto y mediano plazo</h1>
+        <form action="form.html">
+        <div>
+            <label for="Meta"> Méta : </label>
+            <input type="text" id="Meta" name="user_meta">
+        </div>
+        <br>
+        <div>
+            <label for="descripcion">Descripcion :</label>
+            <textarea placeholder="Escribe la Descripcion" id="descripcion" name="user_des"></textarea>
+        </div>
+        <br>       
+        <div>
+            <label for="Plazo">Plazo :</label>
+            <select name='nom' size="1">
+              <option value="1">Uno</option>  
+              <option value="3">Tres</option>
+              <option value="5">Cinco</option>
+              <option value="10">Diez</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <br>
+            <label for="indispensable">Es Indispensable</label>
+            <input type="radio" name="indispensable" value="si">SI
+            <input type="radio" name="indispensable" value="no">NO
+            <br>
+        </div>
+        <label for="cuando">Cuando</label>
+        <input type="checkbox" name="cuando" id="antes" value="antes"><br>       
+        <input type="checkbox" name="cuando" id="durante" value="durante"><br>       
+        <input type="checkbox" name="cuando" id="despues" value="despues"><br>
+        <div>
+            <input type="hidden" id="codigo" name="codigo" value="5548"><br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Crear meta</button>
+        </div>
+    
+        <style>
+            label {
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+            }
+            input,textarea {
+                font : 1em sans-serif;
+                width: 300px;
+                box-sizing: border-box;
+                border: 1px solid #999;
+            }
+            input:focus, textarea:focus{
+                border-color  : #000;   
+            }
+            textarea{
+                vertical-align: top;
+                height: 5em;
+            }
+           input:user_cod{
+                visibility: hidden,
+                
+                
+            }
+            </style>
+            </form>
+    </body>
+</html>
+
